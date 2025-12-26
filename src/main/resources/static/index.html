@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Management System</title>
+<link rel="stylesheet" href="css/student.css">
+</head>
+<body>
+<div class="container">
+    <h1>Student Management System</h1>
+
+    <!-- Add / Update Form -->
+    <form id="studentForm">
+        <input type="hidden" id="studentId">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <input type="text" id="course" placeholder="Course" required>
+        <input type="text" id="address" placeholder="Address" required>
+        <button type="submit">Add / Update Student</button>
+    </form>
+
+    <!-- Search -->
+    <div class="search">
+        <input type="text" id="searchName" placeholder="Search by Name">
+        <button onclick="searchByName()">Search</button>
+
+        <input type="text" id="searchCourse" placeholder="Search by Course">
+        <button onclick="searchByCourse()">Search</button>
+    </div>
+
+    <!-- Actions -->
+    <button onclick="fetchStudents()">Fetch All Students</button>
+    <button onclick="deleteAll()">Delete All Students</button>
+
+    <!-- Student Table -->
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Address</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="js/student.js"></script>
+</body>
+</html>

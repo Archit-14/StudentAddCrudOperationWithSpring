@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: restapiwithvalidation
+  datasource:
+    username: postgres
+    password: Archit@14
+    url: jdbc:postgresql://localhost:5432/studcrudproject
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update

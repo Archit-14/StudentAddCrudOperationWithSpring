@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+
+
+/* ===================== Global body ===================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===================== Main container ===================== */
+.container {
+    width: 700px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* ===================== Form styling ===================== */
+form#studentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Form button */
+form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* ===================== Search styling ===================== */
+.search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search button {
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.search button:hover {
+    background-color: #1e7e34;
+}
+
+/* ===================== Fetch & Delete all buttons ===================== */
+button.fetch-btn, button.delete-btn {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button.fetch-btn {
+    background-color: #17a2b8;
+}
+
+button.fetch-btn:hover {
+    background-color: #117a8b;
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+}
+
+button.delete-btn:hover {
+    background-color: #a71d2a;
+}
+
+/* ===================== Table styling ===================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ===================== Table buttons ===================== */
+table td button {
+    margin: 0 2px;
+    padding: 5px 8px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+table td button:hover {
+    opacity: 0.9;
+}
+
+/* Edit button */
+table td button:nth-child(1) {
+    background-color: #ffc107;
+    color: black;
+}
+
+/* Update course button */
+table td button:nth-child(2) {
+    background-color: #17a2b8;
+    color: white;
+}
+
+/* Delete button */
+table td button:nth-child(3) {
+    background-color: #dc3545;
+    color: white;
+}
