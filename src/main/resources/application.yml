@@ -3,7 +3,7 @@ spring:
     name: restapiwithvalidation
   datasource:
     username: postgres
-    password: Archit@14
+    password: 
     url: jdbc:postgresql://localhost:5432/studcrudproject
   jpa:
     show-sql: true
