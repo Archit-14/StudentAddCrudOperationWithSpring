@@ -30,20 +30,21 @@ Build Tool :--	Maven
 student-management/
 │
 ├─ src/main/java/com/jsp/studentadd/
-│   ├─ controller/       # RestControllers
-│   ├─ service/          # Service layer + interface
-│   ├─ repository/       # JPA repositories
-│   ├─ entity/           # Student entity
-│   ├─ exception/        # Custom exceptions
-│   └─ configuration/    # Custom ID generator
+│   ├─ controller/
+│   ├─ service/
+│   ├─ repository/
+│   ├─ entity/
+│   ├─ exception/
+│   └─ configuration/
 │
 ├─ src/main/resources/static/
-│   ├─ index.html        # Frontend HTML
-│   ├─ css/student.css   # CSS styling
-│   └─ js/student.js     # Frontend JS
+│   ├─ index.html
+│   ├─ css/student.css
+│   └─ js/student.js
 │
 ├─ src/main/resources/application.properties
 └─ pom.xml
+
 
 
 ***Notes
